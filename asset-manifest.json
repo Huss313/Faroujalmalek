@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Huss313/Faroujalmalek.git/static/css/main.2ff1dfe1.css",
+    "main.js": "/Huss313/Faroujalmalek.git/static/js/main.f9ca85bc.js",
+    "static/js/453.5e7ff288.chunk.js": "/Huss313/Faroujalmalek.git/static/js/453.5e7ff288.chunk.js",
+    "static/media/beef.jpg": "/Huss313/Faroujalmalek.git/static/media/beef.054843bb1614543a18a3.jpg",
+    "static/media/chicken.jpg": "/Huss313/Faroujalmalek.git/static/media/chicken.7888d4c929dabac1b4a5.jpg",
+    "static/media/malek.jpg": "/Huss313/Faroujalmalek.git/static/media/malek.8e44e5626de4bde7def5.jpg",
+    "index.html": "/Huss313/Faroujalmalek.git/index.html",
+    "main.2ff1dfe1.css.map": "/Huss313/Faroujalmalek.git/static/css/main.2ff1dfe1.css.map",
+    "main.f9ca85bc.js.map": "/Huss313/Faroujalmalek.git/static/js/main.f9ca85bc.js.map",
+    "453.5e7ff288.chunk.js.map": "/Huss313/Faroujalmalek.git/static/js/453.5e7ff288.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ff1dfe1.css",
+    "static/js/main.f9ca85bc.js"
+  ]
+}
