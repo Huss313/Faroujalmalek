@@ -116,16 +116,5 @@ export default function Menu() {
     );
 }
 
-const footerStyle = {
-  backgroundColor: '#222',
-  color: '#eee',
-  textAlign: 'center',
-  padding: '15px 10px',
-  fontSize: '14px',
-  fontFamily: 'Arial, sans-serif',
-  position: 'relative', // if you want fixed footer you can change this
-  bottom: 0,
-  width: '100%'
-};
 
 
