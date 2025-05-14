@@ -128,14 +128,4 @@ const footerStyle = {
   width: '100%'
 };
 
-const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
-  return (
-    <footer style={footerStyle}>
-      &copy; {currentYear} Your Company Name. All rights reserved.
-    </footer>
-  );
-};
-
 
