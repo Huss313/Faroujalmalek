@@ -1,4 +1,3 @@
 [build]
-  base = "faroujmalek"  # Points to the React project
-  publish = "build"     # Or "dist", depending on your React setup
-  command = "npm run build"
+  publish = "build"  # React's default build folder
+  command = "npm install && npm run build"
