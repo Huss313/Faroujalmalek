@@ -8,13 +8,13 @@ const menuData = [
   {
     category: "سندويشات",
     items: [
-      { name: "طاووق", price: "300,000L.L" },
-      { name: "كباب", price: "300,000L.L" },
-      { name: "سجق", price: "300,000L.L" },
-      { name: "مقانق", price: "300,000L.L" },
-      { name: "شقف", price: "350,000L.L" },
-      { name: "كباب دجاج", price: "300,000L.L" },
-      { name: "دجاج", price: "300,000L.L" }
+      { name: "طاووق", price: "350,000L.L" },
+      { name: "كباب", price: "350,000L.L" },
+      { name: "سجق", price: "350,000L.L" },
+      { name: "مقانق", price: "350,000L.L" },
+      { name: "شقف", price: "400,000L.L" },
+      { name: "كباب دجاج", price: "350,000L.L" },
+      { name: "دجاج", price: "350,000L.L" }
     ]
   },
   {
