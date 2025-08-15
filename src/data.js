@@ -61,21 +61,21 @@ export const menuData = {
       name: "Elmalek combo",
       price: 1600000,
       description: ["Farouj w nos", " + Batata (large)", "Toum + Kabis", " + Sauce Elmalek", " + Khebze Harra"],
-      category: "OFFER ELMALEK"
+      category: "OFFERS ELMALEK"
     },
     {
       id: 45,
       name: "Sandwich Combo",
       price: 550000,
       description: ["Any sandwich +", " Batata ", "+ Pepsi"],
-      category: "OFFER ELMALEK"
+      category: "OFFERS ELMALEK"
     },
     {
       id: 46,
       name: "Double Sandwich",
       price: 650000,
       description: ["2 sandwiches djej fahem"],
-      category: "OFFER ELMALEK"
+      category: "OFFERS ELMALEK"
     }
   ]
 };
