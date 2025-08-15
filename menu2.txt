@@ -1,0 +1,145 @@
+import React, { useState } from "react";
+import "./Menu.css";
+
+const menuSections = [
+  {
+    title: "SANDWICHES",
+    items: [
+      { name: "El Malek", price: "350,000 L.L" },
+      { name: "Tawook", price: "350,000 L.L" },
+      { name: "Kafta", price: "350,000 L.L" },
+      { name: "Kabab", price: "350,000 L.L" },
+      { name: "Makanek", price: "350,000 L.L" },
+      { name: "Sojok", price: "350,000 L.L" },
+      { name: "Sawda", price: "300,000 L.L" },
+      { name: "Shokaf", price: "400,000 L.L" },
+      { name: "Batata", price: "250,000 L.L" }
+    ]
+  },
+  {
+    title: "MASHAWI",
+    items: [
+      { name: "Shokaf (1k)", price: "1,700,000 L.L" },
+      { name: "Shokaf (1/2k)", price: "900,000 L.L" },
+      { name: "Kafta (1k)", price: "1,500,000 L.L" },
+      { name: "Kafta (1/2k)", price: "800,000 L.L" },
+      { name: "Makanek (1k)", price: "1,500,000 L.L" },
+      { name: "Makanek (1/2k)", price: "800,000 L.L" },
+      { name: "Kabab (1k)", price: "1,500,000 L.L" },
+      { name: "Kabab (1/2k)", price: "800,000 L.L" },
+      { name: "Mshakal (1k)", price: "1,500,000 L.L" },
+      { name: "Mshakal (1/2k)", price: "800,000 L.L" },
+      { name: "Sojok (1k)", price: "1,500,000 L.L" },
+      { name: "Sojok (1/2k)", price: "800,000 L.L" },
+      { name: "Jwenih", price: "550,000 L.L" },
+      { name: "Jwenih (1/2)", price: "300,000 L.L" },
+      { name: "Tawook (1k)", price: "1,200,000 L.L" },
+      { name: "Tawook (1/2k)", price: "650,000 L.L" },
+      { name: "Farouj ahem", price: "1,000,000 L.L" },
+      { name: "Farouj", price: "550,000 L.L" }
+    ]
+  },
+  {
+    title: "BURGERS",
+    items: [
+      { name: "Double beef/chicken", price: "500,000 L.L" },
+      { name: "Beef burger classic", price: "350,000 L.L" },
+      { name: "Beef burger lebanese", price: "350,000 L.L" },
+      { name: "Chicken burger classic", price: "350,000 L.L" },
+      { name: "Chicken burger lebanese", price: "350,000 L.L" }
+    ]
+  },
+  {
+    title: "APPETIZERS",
+    items: [
+      { name: "Fries (large)", price: "300,000 L.L" },
+      { name: "Fries (small)", price: "150,000 L.L" },
+      { name: "Homos", price: "150,000 L.L" },
+      { name: "Biwaz", price: "100,000 L.L" },
+      { name: "Toum", price: "100,000 L.L" },
+      { name: "Sauce", price: "100,000 L.L" }
+    ]
+  },
+  {
+    title: "DRINKS",
+    items: [
+      { name: "Pepsi", price: "80,000 L.L" },
+      { name: "Miranda", price: "80,000 L.L" },
+      { name: "7 Up", price: "80,000 L.L" },
+      { name: "Ayran", price: "80,000 L.L" },
+      { name: "Water", price: "30,000 L.L" }
+    ]
+  },
+  {
+    title: "OFFER ELMALEK",
+    items: [
+      { 
+        name: "Royal Feast", 
+        price: "1,600,000 L.L",
+        description: [
+          "Farouj w nos",
+          "Batata (large)",
+          "Toum + Kabis",
+          "Sauce Elmalek",
+          "Khebze Harra"
+        ]
+      },
+      { 
+        name: "Sandwich Combo", 
+        price: "550,000 L.L",
+        description: [
+          "Any sandwich",
+          "Batata",
+          "Pepsi"
+        ]
+      },
+      { 
+        name: "Double Sandwich", 
+        price: "650,000 L.L",
+        description: [
+          "2 sandwiches djej fahem"
+        ]
+      }
+    ]
+  }
+];
+
+export default function Menu() {
+  const [openSection, setOpenSection] = useState(null);
+
+  const toggleSection = (index) => {
+    setOpenSection(openSection === index ? null : index);
+  };
+
+  return (
+    <div id="menu" className="menu-wrapper">
+      {menuSections.map((section, index) => (
+        <div key={index} className="menu-section">
+          <button
+            className={`section-button ${openSection === index ? "active" : ""}`}
+            onClick={() => toggleSection(index)}
+          >
+            {section.title} {openSection === index ? "−" : "+"}
+          </button>
+
+          <div className={`menu-items ${openSection === index ? "open" : ""}`}>
+            {openSection === index &&
+              section.items.map((item, i) => (
+                <div key={i} className="menu-item">
+                  <span>{item.name}</span>
+                  <span>{item.price}</span>
+                  {item.description && (
+                    <ul className="menu-description">
+                      {item.description.map((desc, j) => (
+                        <li key={j}>{desc}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}

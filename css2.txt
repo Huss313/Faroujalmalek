@@ -1,0 +1,102 @@
+/* ===== Body & Background ===== */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('../assets/beef.jpg'); /* replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Wrapper & Container ===== */
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* center sections horizontally */
+  width: 100%;
+  max-width: 350px;          /* narrow column in center */
+  padding: 20px;
+  text-align: center;
+}
+
+/* ===== Section Button ===== */
+.section-button {
+  background-color: #d62828; /* red background */
+  color: #222;               /* text color */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 24px;
+  margin: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.section-button:hover {
+  background-color: #b71c1c;  /* darker red on hover */
+  transform: translateY(-2px);
+}
+
+/* ===== Food Items (Removed White Background) ===== */
+.menu-items {
+  background-color: transparent; /* remove white background */
+  padding: 0;
+  margin: 6px 0 16px 0;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: bold;
+}
+
+/* ===== Individual Menu Item ===== */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  color: #fff;                 /* text color for visibility on image */
+  border-bottom: 1px solid rgba(255,255,255,0.2); /* subtle separator */
+  font-size: 16px;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+/* ===== Description under item ===== */
+.menu-description {
+  font-size: 14px;
+  color: #eee;
+  margin: 4px 0 0 0;
+  padding-left: 18px;
+  text-align: left;
+  list-style-type: disc;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 480px) {
+  .menu-wrapper {
+    max-width: 90%; /* smaller screen adjustment */
+    padding: 10px;
+  }
+
+  .section-button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .menu-item {
+    font-size: 15px;
+  }
+
+  .menu-description {
+    font-size: 13px;
+  }
+}

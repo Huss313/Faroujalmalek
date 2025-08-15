@@ -1,0 +1,10 @@
+import { Link } from 'react-router-dom';
+export default function Navbar() {
+  return (
+    <nav className="navbar">
+      <ul className="nav-links">
+        <li><Link to="/Contact" className="navo">Contact Us</Link></li>
+      </ul>
+    </nav>
+  );
+}

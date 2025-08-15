@@ -1,10 +1,27 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
-export default function Navbar() {
+//import logo from '../Images/bashapic.png';
+import './Navbar.css';
+// Replace the import with:
+const logo = process.env.PUBLIC_URL + '/Images/malek.jpg';
+function Navbar() {
   return (
     <nav className="navbar">
-      <ul className="nav-links">
-        <li><Link to="/Contact" className="navo">Contact Us</Link></li>
-      </ul>
+        <Link to="/" className="logo-link">
+          <img src={logo} alt="Basha Logo" className="logo" style={{borderRadius:'50%'}}/>
+        </Link>
+      <div className="nav-buttons">
+        <Link to="/" className="nav-button menu-button">
+           <span className="arabic">القائمة</span>
+           <span className="english">Menu</span>
+        </Link>
+        <Link to="/contact" className="nav-button contact-button">
+           <span className="arabic">اتصل بنا</span>
+           <span className="english">Contact</span>
+        </Link>
+      </div>
     </nav>
   );
 }
+
+export default Navbar;
