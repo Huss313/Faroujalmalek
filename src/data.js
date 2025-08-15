@@ -30,8 +30,8 @@ export const menuData = {
     { id: 23, name: "Jwenih (1/2)", price: 300000, description: "", category: "MASHAWI" },
     { id: 24, name: "Tawook (1k)", price: 1200000, description: "", category: "MASHAWI" },
     { id: 25, name: "Tawook (1/2k)", price: 650000, description: "", category: "MASHAWI" },
-    { id: 26, name: "Farouj ahem", price: 1000000, description: "", category: "MASHAWI" },
-    { id: 27, name: "Farouj", price: 550000, description: "", category: "MASHAWI" },
+    { id: 26, name: "Farouj aalfahem", price: 1000000, description: "", category: "MASHAWI" },
+    { id: 27, name: "Nos Farouj aalfahem", price: 550000, description: "", category: "MASHAWI" },
 
     // BURGERS
     { id: 28, name: "Double beef/chicken", price: 500000, description: "", category: "BURGERS" },
@@ -60,7 +60,7 @@ export const menuData = {
       id: 44,
       name: "Elmalek combo",
       price: 1600000,
-      description: ["Farouj w nos", " + Batata (large)", "Toum + Kabis", " + Sauce Elmalek", " + Khebze Harra"],
+      description: ["Farouj w nos", " + Batata (large)+", "Toum + Kabis", " + Sauce Elmalek", " + Khebze Harra"],
       category: "OFFERS ELMALEK"
     },
     {
