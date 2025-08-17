@@ -1,86 +1,85 @@
+/* ===== Contact Page ===== */
 .contact-page {
-  background-color: #f9f9f9;
   min-height: 100vh;
-  padding: 2rem;
-  font-family: 'Tahoma', 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(120deg, #fdfbfb, #ebedee);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* ===== Container ===== */
 .contact-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  padding: 2.5rem;
+  text-align: center;
 }
 
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #c90202;
+  font-weight: bold;
+}
+
+/* ===== Info Cards ===== */
 .contact-info {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .info-card {
-  background: #fff8f0;
-  padding: 1.5rem;
-  border-radius: 8px;
-  text-align: center;
-  border: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.2rem;
+  border-radius: 12px;
+  background: #fafafa;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.info-card .icon {
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.icon {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  color: #c90202;
 }
 
-.contact-form {
-  margin-top: 2rem;
+.info-card h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.2rem;
+  color: #222;
 }
 
-.form-group {
-  margin-bottom: 1.5rem;
+.contact-link {
+  color: #c90202;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
+.contact-link:hover {
+  color: #ff4d4d;
 }
 
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-family: inherit;
+.contact-text {
+  color: #ff4d4d;
+  margin: 0;
 }
 
-.submit-btn {
-  background-color: #d4a762; /* Gold color */
-  color: white;
-  border: none;
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-  font-weight: bold;
-}
-
-.submit-btn:hover {
-  background-color: #c49550;
-}
-
-/* RTL specific styles */
-[dir="rtl"] .form-group input,
-[dir="rtl"] .form-group textarea {
-  text-align: right;
-}
-
-@media (max-width: 768px) {
-  .contact-info {
-    grid-template-columns: 1fr;
+@media (max-width: 600px) {
+  .info-card {
+    flex-direction: column;
+    text-align: center;
   }
 }

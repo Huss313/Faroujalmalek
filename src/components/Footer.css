@@ -1,12 +1,11 @@
-/* ===== Footer Styles ===== */
 .footer {
-  background: #111; /* dark background */
+  background: #b22222; 
   color: #fff;
   text-align: center;
   padding: 1rem 0;
-  margin-top: auto; /* pushes footer down */
+  margin-top: auto; 
   font-size: 0.95rem;
-  border-top: 2px solid #c90202; /* matches navbar red */
+  border-top: 2px solid #c90202; 
 }
 
 .footer-text {
@@ -23,4 +22,8 @@
 .footer-text .my-name:hover {
   color: #ff4d4d;
   cursor: pointer;
+}
+
+.white{
+    color: #fff;
 }
