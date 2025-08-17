@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import CategoryButton from './components/CategoryButton';
 import MenuItem from './components/MenuItem';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 //import MyComponent from './components/MyComponent'; // Add this import
 import './App.css';
 
@@ -64,6 +65,7 @@ function App() {
           } />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );

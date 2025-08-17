@@ -1,0 +1,26 @@
+/* ===== Footer Styles ===== */
+.footer {
+  background: #111; /* dark background */
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto; /* pushes footer down */
+  font-size: 0.95rem;
+  border-top: 2px solid #c90202; /* matches navbar red */
+}
+
+.footer-text {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-text .my-name {
+  font-weight: 600;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-text .my-name:hover {
+  color: #ff4d4d;
+  cursor: pointer;
+}
